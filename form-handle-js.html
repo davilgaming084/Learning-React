@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input  name="username" id="username" type="text">
+        <input name="lastname" id="lastname" type="text">
+        <button id="btnSub">Submit</button>
+    </form>
+</body>
+<script>
+
+    // document.querySelector("form").addEventListener('submit', (e) => {
+    //     e.preventDefault()
+    // })
+    // let subBtn = document.querySelector("#btnSub")
+    // subBtn.addEventListener("click", () => {
+    //     let usernameInout = document.querySelector("#username")
+    //     console.log(usernameInout.value);
+    // })
+
+    //-------------------------------------------------
+    // get all input value at ones
+    // ... existing code ...
+    // document.querySelector("form").addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     const formData = new FormData(e.target);  // Get all form data
+    //     const username = formData.getAll('username'); // Assuming the input has a name attribute
+    //     console.log(formData);
+    //     formData.forEach((value)=>{
+    //         console.log(value);
+    //     })
+    // });
+    // ... existing code ...
+
+/// input enent listner => input work same like onchange
+    // let username = document.querySelector("#username")
+    // username.addEventListener("input", () => {
+    //     console.log(username.value);
+    // })
+</script>
+
+</html>
