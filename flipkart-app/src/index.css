@@ -1,0 +1,25 @@
+body{
+  background-color: #212121;
+  color: aliceblue;
+  font-family: "Helvetica";
+}
+.product-card {
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Spacing inside the card */
+  width: 200px; /* Set a fixed width for the card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 16px; /* Spacing around the card */
+  text-align: center; /* Center text inside the card */
+}
+
+.product-card__image {
+  max-width: 100%; /* Ensure image does not exceed the card width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for the image */
+}
+
+.product-card__description,
+.product-card__price {
+  margin: 8px 0; /* Spacing between text elements */
+}
