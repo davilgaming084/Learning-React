@@ -1,0 +1,58 @@
+/* body{
+  background-color: #212121;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* Add some general styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Style for the h1 header */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Container for rows */
+#Lower-Row-1, #Lower-Row-2, #Lower-Row-3, #Lower-Row-4, #Lower-Row-5, #Lower-Row-6, #Lower-Row-7, #Lower-Row-8 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* General button styles */
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Button styles for selected seats */
+button.selected {
+  background-color: red;
+}
+#p{
+  position: absolute;
+  top: 10px;
+  right:  10px;
+  background-color: red;
+  margin: 10px;
+}
+

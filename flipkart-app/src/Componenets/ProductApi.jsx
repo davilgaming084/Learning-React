@@ -36,15 +36,12 @@ const ProductApi = (props) => {
 
     return (
         <>
-            {isValidIndex ? (
-                <div className="product-card">
+            {isValidIndex ? (<div className="product-card">
                     <img className="product-card__image" src={imgUrl} alt="Product" />
                     <div id='details'>
                         <p className="product-card__description">Name: {data[index].description}</p>
                         <p className="product-card__price">Price: {data[index].price}</p>
-                    </div>
-                </div>
-            ) : (
+                    </div></div>            ) : (
                 <p>No data available or invalid product index.</p>
             )}
         </>
