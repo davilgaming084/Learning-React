@@ -32,7 +32,7 @@ import Login from './Component/Loging/Login.jsx'
 //   }
 // ])  
 
-// way 3 for craeteing router 
+// way 2 for craeteing router 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root_layout />} >
