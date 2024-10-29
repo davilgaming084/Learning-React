@@ -7,7 +7,7 @@ import About from './Component/About/About'
 import Contect from './/Component/Contect/Contect'
 import Github from './/Component/Github/Github'
 import Login from './/Component/Loging/Login'
-import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, createRoutesFromElements, Route,  RouterProvider } from "react-router-dom"
 
 const router = createBrowserRouter(
   createRoutesFromElements(

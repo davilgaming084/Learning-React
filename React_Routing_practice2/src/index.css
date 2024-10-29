@@ -1,0 +1,9 @@
+/* React_Routing_practice2/src/index.css */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+}
+
+#root {
+    height: 100%;
+}
