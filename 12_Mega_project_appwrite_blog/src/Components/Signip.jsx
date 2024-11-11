@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import AuthenticationService from '../Appwrite/Authentication'
-
+import { useNavigate } from 'react-router-dom'
 function Signup() {
-    AuthenticationService.getCurrentUser().then((res)=>{console.log(res);
-    })
-    
-    
+    // AuthenticationService.getCurrentUser().then((res)=>{console.log(res)})
+    const navigate = useNavigate()
+    const gobackAfterCreatedAccount = () => {
+        navigate(-1)
+    }
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -27,32 +29,36 @@ function Signup() {
     return (
         <div className="max-w-md mx-auto mt-10">
             <form onSubmit={handleSubmit}>
-                <input 
+                <input
                     type="text"
                     placeholder="Enter your name"
                     value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full mb-2 p-2 border rounded"
                 />
-                <input 
+                <input
                     type="email"
                     placeholder="Enter your email"
                     value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full mb-2 p-2 border rounded"
                 />
-                <input 
+                <input
                     type="password"
                     placeholder="Choose a password"
                     value={formData.password}
-                    onChange={(e) => setFormData({...formData, password: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                     className="w-full mb-2 p-2 border rounded"
                 />
-                <button 
+                <button
                     type="submit"
                     className="w-full p-2 bg-blue-500 text-white rounded"
                 >
                     Sign Up
+                </button>
+
+                <button onClick={gobackAfterCreatedAccount}>
+                    After Creted Account Click Here to GO HOME 
                 </button>
             </form>
         </div>

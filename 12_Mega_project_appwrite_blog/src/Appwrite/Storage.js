@@ -53,11 +53,25 @@ class Storage_Service {
     }
 
     // get file previwe 
-    getfilepreviwe() {
+    getfilepreviwe(fileId) {
         return this.Storage_Bucket.getFilePreview(
             Conf_Env.APPWRITE_BUCKET_ID,
-            this.fileid,
+            fileId,
         )
+
+    }
+
+    // get all image of appwrite storage and use show on ui 
+    async getListfile() {
+        try {
+            return await this.Storage_Bucket.listFiles(
+                Conf_Env.APPWRITE_BUCKET_ID
+            )
+        } catch (error) {
+            console.log(error.message);
+            throw error
+
+        }
     }
 }
 const Storage_Services = new Storage_Service()
