@@ -16,8 +16,10 @@ const CreatePost = () => {
   // then you have image on state then upload it on appwrite 
   const upload = async () => {
     if (file) { // if file is true then upload 
-      await StorageService.uploadfile(file);
-      navigate(-1);
+      await StorageService.uploadfile(file); // UPLODE  FILE/IMG
+      
+
+      navigate(-1);      
     } else {
       console.log("Failed to get file from user");
     }
